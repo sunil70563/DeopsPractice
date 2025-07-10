@@ -1,113 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Task Completion - Terraform EC2 Launch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Completion Showcase</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
       margin: 0;
       padding: 0;
-      background: #f0f4f8;
-      color: #333;
     }
     header {
-      background: #2b5876;
-      color: #fff;
-      padding: 20px 40px;
+      background-color: #eee;
+      color: #222;
+      padding: 15px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 1.8em;
     }
-    .details {
-      background: #ffffff;
+    header p {
+      margin: 5px 0 0;
+      font-size: 0.9em;
+    }
+    .container {
+      max-width: 700px;
       margin: 20px auto;
-      padding: 20px 40px;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 0 15px;
     }
-    .details h2 {
-      color: #1a73e8;
-      border-bottom: 2px solid #1a73e8;
+    h2 {
+      font-size: 1.2em;
+      margin-top: 30px;
+      border-bottom: 1px solid #ddd;
       padding-bottom: 5px;
     }
-    .details p {
-      line-height: 1.6;
+    p, ol {
+      line-height: 1.5;
+      margin: 15px 0;
     }
-    .image-block {
-      margin: 30px 0;
-      text-align: center;
+    ol {
+      padding-left: 20px;
     }
-    .image-block img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      margin-top: 10px;
+    .images img {
+      width: 100%;
+      margin: 15px 0;
+      border: 1px solid #ddd;
+      border-radius: 3px;
     }
     footer {
-      background: #2b5876;
-      color: #fff;
+      background-color: #eee;
+      color: #555;
       text-align: center;
-      padding: 10px 0;
-      margin-top: 50px;
+      padding: 10px;
+      font-size: 0.8em;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Task Completion Showcase</h1>
-    <p><strong>Name:</strong> Sunil Kumar &nbsp; | &nbsp; <strong>Section:</strong> 06 &nbsp; | &nbsp; <strong>Roll No:</strong> 16 &nbsp; | &nbsp; <strong>Reg. No:</strong> 12217557</p>
+    <p>Sunil Kumar | Section 06 | Roll No 16 | Reg No 12217557</p>
   </header>
+  <div class="container">
+    <h2>Task Description</h2>
+    <p><strong>Objective:</strong> Set up Terraform and launch an AWS EC2 instance.</p>
 
-  <div class="details">
-    <h2>📝 Task Description</h2>
-    <p>
-      <strong>Objective:</strong> Download and install Terraform, and use it to launch a basic EC2 instance on AWS.
-    </p>
-    <p>
-      The task involved setting up Terraform on a Windows machine, adding it to the system PATH, verifying the installation, writing a basic Terraform script using AWS provider, and launching an EC2 instance using commands such as <code>terraform init</code>, <code>terraform apply</code>, and <code>terraform destroy</code>.
-    </p>
-    
-    <h2>🚀 Steps to Achieve</h2>
+    <h2>Steps</h2>
     <ol>
-      <li>Downloaded Terraform from the official HashiCorp website.</li>
-      <li>Added Terraform binary to the Windows system PATH variable.</li>
-      <li>Verified Terraform installation via command line.</li>
-      <li>Wrote Terraform script for launching EC2 using `aws_instance` resource.</li>
-      <li>Initialized and applied the script using Terraform commands.</li>
-      <li>Successfully launched and later destroyed the EC2 instance.</li>
+      <li>Downloaded and extracted Terraform.</li>
+      <li>Added Terraform to the system <code>PATH</code>.</li>
+      <li>Verified installation via <code>terraform --version</code>.</li>
+      <li>Created <code>main.tf</code> with AWS provider and EC2 resource.</li>
+      <li>Ran <code>terraform init</code>, <code>plan</code>, and <code>apply</code>.</li>
+      <li>Destroyed resources with <code>terraform destroy</code>.</li>
     </ol>
 
-    <div class="image-block">
-      <h3>📌 Added Terraform to PATH Environment Variable</h3>
-      <img src="images/added-to-path.png" alt="Added to Path">
-    </div>
-
-    <div class="image-block">
-      <h3>✅ Verified the Installation</h3>
-      <img src="images/verified-installation.png" alt="Terraform Version">
-    </div>
-
-    <div class="image-block">
-      <h3>🛠️ Terraform Script Used</h3>
-      <img src="images/terraform-script.png" alt="Terraform Script">
-    </div>
-
-    <div class="image-block">
-      <h3>📤 Output After Running Script</h3>
-      <img src="images/terraform-output.png" alt="Terraform Output">
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Sunil Kumar | Task-1: Terraform EC2 Launch
-  </footer>
-</body>
-</html>
+    <h2>Screenshots</h2>
+    <div class="images">
+      <img src="images/added-to-path.png" alt="Added to PATH">
+      <img src="images/verified-installation.png" alt="Verified Installation">
+      <img src="image
